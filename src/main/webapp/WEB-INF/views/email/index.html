@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+
+<h1>Email Validate</h1>
+<h3 style="color:red" th:text="${message}"></h3>
+
+<form action="/email/validate" method="post">
+    <input type="text" name="email"><br>
+    <input type="submit" value="Validate">
+</form>
+
+</body>
+</html>
